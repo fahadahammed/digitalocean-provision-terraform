@@ -97,7 +97,7 @@ jobs:
     # Generates an execution plan for Terraform
     - name: Terraform Plan
       env:
-        do_token: ${{ secrets.SuperSecret }}
+        do_token: ${{ secrets.do_token }}
       run: |
         cd terraform-digitalocean
         terraform plan -input=false -var "do_token=$do_token" -out terraform.plan.out
