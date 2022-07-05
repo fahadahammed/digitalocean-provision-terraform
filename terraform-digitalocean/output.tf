@@ -7,13 +7,13 @@ output "droplet-public-ip" {
 }
 
 output "droplet-tags" {
-    value = digitalocean_droplet.static-cdn-origin.tags
+  value = digitalocean_droplet.static-cdn-origin.tags
 }
 
 output "droplet-name" {
-    value = digitalocean_droplet.static-cdn-origin.name
+  value = digitalocean_droplet.static-cdn-origin.name
 }
 
 output "droplet-hourly-price" {
-    value = digitalocean_droplet.static-cdn-origin.price_hourly
+  value = digitalocean_droplet.static-cdn-origin.price_hourly
 }
