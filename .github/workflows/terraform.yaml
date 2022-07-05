@@ -86,7 +86,7 @@ jobs:
     - name: Terraform Format
       run: |
         cd terraform-digitalocean
-        terraform fmt
+        terraform fmt -check
 
     # Checks that all Terraform configuration files validity
     - name: Terraform Validation
