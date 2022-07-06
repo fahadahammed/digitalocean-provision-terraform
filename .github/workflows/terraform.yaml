@@ -110,7 +110,7 @@ jobs:
     - name: Terraform test with terraform-compliance
       run: |
         python -m pip install --upgrade pip
-        pip install -r features/requirements.txt
+        pip install -r requirements.txt
         terraform-compliance --features ./features --planfile terraform-digitalocean/terraform.plan.out
         
       

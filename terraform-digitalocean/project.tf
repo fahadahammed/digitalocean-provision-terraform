@@ -1,7 +1,7 @@
-resource "digitalocean_project" "CDN" {
-  name        = "CDN"
-  description = "Resources involving CDN."
-  purpose     = "Web Application"
-  environment = "Production"
-  resources   = [digitalocean_droplet.static-cdn-origin.urn]
+resource "digitalocean_project" "do_project" {
+  name        = var.projectName
+  description = var.projectDescription
+  purpose     = var.projectPurpose
+  environment = var.projectEnvironment
+  resources   = [digitalocean_droplet.my_desired_do_droplet.urn]
 }
